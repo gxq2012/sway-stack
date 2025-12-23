@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>隐私政策 - 摇摆高塔 / Privacy Policy - Sway Stack</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .language-switcher {
+            padding: 15px 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+        }
+
+        .lang-btn {
+            padding: 8px 16px;
+            border: 2px solid #3B82F6;
+            background: white;
+            color: #3B82F6;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: all 0.3s;
+        }
+
+        .lang-btn:hover {
+            background: #3B82F6;
+            color: white;
+        }
+
+        .lang-btn.active {
+            background: #3B82F6;
+            color: white;
+        }
+
+        .content {
+            padding: 40px;
+            display: none; /* 默认隐藏所有内容 */
+        }
+
+        .content.active {
+            display: block; /* 只显示激活的内容 */
+        }
+
+        .intro {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #3B82F6;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            font-size: 22px;
+            color: #1E40AF;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        .section ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .section li {
+            padding: 10px 0;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .section li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #3B82F6;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .footer {
+            padding: 30px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 8px 0;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #3B82F6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                border-radius: 0;
+                margin: 0;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="header-title">隐私政策</h1>
+            <p class="subtitle" id="header-subtitle">Privacy Policy</p>
+        </div>
+
+        <div class="language-switcher">
+            <button class="lang-btn active" onclick="switchLanguage('zh', event)">中文</button>
+            <button class="lang-btn" onclick="switchLanguage('en', event)">English</button>
+        </div>
+
+        <div class="content active" data-lang="zh" id="content-zh">
+            <div class="intro">
+                欢迎来到摇摆高塔！在开始游戏之前，请阅读并同意我们的隐私政策。
+            </div>
+
+            <div class="section">
+                <h2>我们收集的数据</h2>
+                <ul>
+                    <li>设备信息（设备型号、系统版本）</li>
+                    <li>游戏进度和分数（本地存储，可选同步到排行榜）</li>
+                    <li>昵称（如果您选择设置）</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>数据使用方式</h2>
+                <ul>
+                    <li>提供排行榜功能（通过 LeanCloud）</li>
+                    <li>在本地保存游戏进度</li>
+                    <li>改善游戏体验</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>第三方服务</h2>
+                <ul>
+                    <li>LeanCloud：排行榜数据存储</li>
+                    <li>Apple Game Center：成就和排行榜（仅 iOS）</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>您的权利</h2>
+                <ul>
+                    <li>随时清除本地游戏数据</li>
+                    <li>联系我们请求删除数据</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content" data-lang="en" id="content-en">
+            <div class="intro">
+                Welcome to Sway Stack! Before you start playing, please read and agree to our privacy policy.
+            </div>
+
+            <div class="section">
+                <h2>Data We Collect</h2>
+                <ul>
+                    <li>Device information (device model, OS version)</li>
+                    <li>Game progress and scores (stored locally and optionally synced to leaderboard)</li>
+                    <li>Nickname (if you choose to set one)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>How We Use Your Data</h2>
+                <ul>
+                    <li>To provide leaderboard rankings (via LeanCloud)</li>
+                    <li>To save your game progress locally</li>
+                    <li>To improve game experience</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Third-Party Services</h2>
+                <ul>
+                    <li>LeanCloud: Leaderboard data storage</li>
+                    <li>Apple Game Center: Achievements and leaderboards (iOS only)</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Your Rights</h2>
+                <ul>
+                    <li>Clear local game data at any time</li>
+                    <li>Contact us to request data deletion</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong id="footer-contact-label">联系方式：</strong><a href="mailto:xiaoqi.guo@gmail.com" id="footer-contact-email">xiaoqi.guo@gmail.com</a></p>
+            <p id="footer-update">最后更新：2025年12月</p>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            zh: {
+                headerTitle: '隐私政策',
+                headerSubtitle: 'Privacy Policy',
+                contactLabel: '联系方式：',
+                contactEmail: 'xiaoqi.guo@gmail.com',
+                update: '最后更新：2025年12月'
+            },
+            en: {
+                headerTitle: 'Privacy Policy',
+                headerSubtitle: '隐私政策',
+                contactLabel: 'Contact: ',
+                contactEmail: 'xiaoqi.guo@gmail.com',
+                update: 'Last updated: December 2025'
+            }
+        };
+
+        function switchLanguage(lang, event) {
+            // 切换内容显示
+            const zhContent = document.getElementById('content-zh');
+            const enContent = document.getElementById('content-en');
+            
+            if (lang === 'zh') {
+                zhContent.classList.add('active');
+                enContent.classList.remove('active');
+            } else {
+                zhContent.classList.remove('active');
+                enContent.classList.add('active');
+            }
+
+            // 切换按钮状态
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // 更新按钮状态
+            if (event && event.target) {
+                event.target.classList.add('active');
+            } else {
+                // 如果没有 event，通过按钮的 onclick 属性找到对应的按钮
+                const buttons = document.querySelectorAll('.lang-btn');
+                buttons.forEach(btn => {
+                    if (btn.getAttribute('onclick') === `switchLanguage('${lang}')` || 
+                        btn.getAttribute('onclick') === `switchLanguage('${lang}', event)`) {
+                        btn.classList.add('active');
+                    }
+                });
+            }
+
+            // 更新页眉和页脚
+            const t = translations[lang];
+            document.getElementById('header-title').textContent = t.headerTitle;
+            document.getElementById('header-subtitle').textContent = t.headerSubtitle;
+            document.getElementById('footer-contact-label').textContent = t.contactLabel;
+            document.getElementById('footer-contact-email').textContent = t.contactEmail;
+            document.getElementById('footer-contact-email').href = 'mailto:' + t.contactEmail;
+            document.getElementById('footer-update').textContent = t.update;
+
+            // 更新 HTML lang 属性
+            document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+        }
+
+        // 根据浏览器语言自动切换（页面加载时）
+        document.addEventListener('DOMContentLoaded', function() {
+            const browserLang = navigator.language || navigator.userLanguage;
+            if (browserLang.startsWith('en')) {
+                // 确保中文内容隐藏
+                const zhContent = document.getElementById('content-zh');
+                const enContent = document.getElementById('content-en');
+                zhContent.classList.remove('active');
+                enContent.classList.add('active');
+                
+                // 更新按钮状态
+                const enBtn = document.querySelector('.lang-btn[onclick*="switchLanguage(\'en\'"]');
+                const zhBtn = document.querySelector('.lang-btn[onclick*="switchLanguage(\'zh\'"]');
+                if (enBtn && zhBtn) {
+                    enBtn.classList.add('active');
+                    zhBtn.classList.remove('active');
+                }
+                
+                // 更新页眉和页脚
+                const t = translations['en'];
+                document.getElementById('header-title').textContent = t.headerTitle;
+                document.getElementById('header-subtitle').textContent = t.headerSubtitle;
+                document.getElementById('footer-contact-label').textContent = t.contactLabel;
+                document.getElementById('footer-contact-email').textContent = t.contactEmail;
+                document.getElementById('footer-contact-email').href = 'mailto:' + t.contactEmail;
+                document.getElementById('footer-update').textContent = t.update;
+                
+                // 更新 HTML lang 属性
+                document.documentElement.lang = 'en';
+            }
+        });
+    </script>
+</body>
+</html>
+
